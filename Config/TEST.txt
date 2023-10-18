@@ -1,2 +1,0 @@
-#测试专用
-CONFIG_TARGET_ipq60xx=y
