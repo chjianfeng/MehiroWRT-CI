@@ -1,10 +1,10 @@
 #CI项目名
-name: Rockchip-Lede
+name: IPQ-Lede
 
 on:
   #自动编译：每天早上4点
-  schedule:
-    - cron: 0 20 * * *
+  #schedule:
+    #- cron: 0 20 * * *
   #手动编译
   workflow_dispatch:
 
@@ -18,7 +18,7 @@ jobs:
     uses: ./.github/workflows/OWRT-CORE.yml
     with:
       #编译平台
-      OWRT_TARGET: Rockchip
+      OWRT_TARGET: IPQ
       #默认主题
       OWRT_THEME: design
       #默认主机名
